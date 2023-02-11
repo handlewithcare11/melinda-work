@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Planets</h1>
+        <style>
+            table, th, td {
+            border:1px solid black;
+            text-align: center;
+            margin:20px;
+        }
+            form {
+               width:460px;
+               
+        }
+        input:focus+label{
+            color:purple;
+        }
+        label {
+            margin:15px;
+        }
+            
+        fieldset {
+            width:200px;
+            margin-left:20px;
+        }
+        </style>
+    </head>
+    <body>
+    <table>
+        <thead>
+            <td colspan="2"</td>
+            <th scope="col">Name</th>
+            <th scope="col">
+                Mas (10
+                <sup>24</sup>
+                kg)
+            </th>
+            <th scope="col">Diameter (km)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial planets</th>
+                <th scope="row">Mercury</th>
+                    <td>0,33</td>
+                    <td>4.879</td>
+            </tr>
+            <tr>
+                <th scope="row">Venus</th>
+                    <td>4,87</td>
+                    <td>12.104</td>
+            </tr>
+            <tr>
+                <th scope="row">Earth</th>
+                    <td>5,97</td>
+                    <td>12.756</td>
+            </tr>
+            <tr>
+                <th scope="row">Mars</th>
+                    <td>0,642</td>
+                    <td>6.792</td>
+                </th>
+            </tr>
+          <th rowspan="4" scope="rowgroup">Jovian planets</th>
+          <th rowspan="2" scope="rowgroup">Gas giants</th>
+            <th scope="row">Jupiter</th>
+                <td>1898</td>
+                <td>142.984</td>
+            <tr>
+            <th scope="row">Saturn</th>
+                <td>568</td>
+                <td>120.536</td>
+            </tr>
+            <th rowspan="2" scope="rowgroup">Ice giants</th>
+            <th scope="row">Uranus</th>
+                <td>86,8</td>
+                <td>51.118</td>
+            <tr>
+            <th scope="row">Neptune</th>
+                <td>102</td>
+                <td>49.528</td>
+            </tr>
+            <tr>
+            <th colspan="2" scope="rowgroup">Dwarf planets</th>
+            <th scope="row">Pluto</th>
+                <td>0,0146</td>
+                <td>2.370</td>
+            </tr>
+        </tbody>
+
+    </table>
+        <fieldset>
+        <legend>Ask us about planets</legend>
+        <form> <br>
+            <label for="fname">Full name:</label>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required><br>
+        
+
+        <label for="fplanet">Favorite planet:</label><br>
+        <input type="radio" id="mercury" name="fplanet" value="mercury">
+        <label for="mercury">Mercury</label><br>
+        <input type="radio" id="venus" name="fplanet" value="venus">
+        <label for="venus">Venus</label><br>
+        <input type="radio" id="earth" name="fplanet" value="earth" checked="earth">
+        <label for="earth">Earth</label><br>
+        <input type="radio" id="mars" name="fplanet" value="mars">
+        <label for="mars">Mars</label><br>
+        <input type="radio" id="jupiter" name="fplanet" value="jupiter">
+        <label for="jupiter">Jupiter</label><br>
+        <input type="radio" id="saturn" name="fplanet" value="saturn">
+        <label for="saturn">Saturn</label><br>
+        <input type="radio" id="uranus" name="fplanet" value="uranus">
+        <label for="uranus">Uranus</label><br>
+        <input type="radio" id="neptune" name="fplanet" value="neptune">
+        <label for="neptune">Neptune</label><br>
+        <input type="radio" id="pluto" name="fplanet" value="pluto">
+        <label for="pluto">Pluto</label><br><br>
+
+        <input type="checkbox" id="terms" name="terms" value="terms" required>
+        <label for="terms">I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">terms and conditions</a></label><br>
+
+            <button onclick="reset">Reset</button>
+            <button onclick="submit">Ask away</button>
+
+        </form>
+        </fieldset>
+    </body>
+</html>
