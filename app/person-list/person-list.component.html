@@ -1,0 +1,12 @@
+<h1>Person List</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Weight (kg)</th>
+      <th>BMI Status</th>
+      <th>More Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of persons; index as i" [class.even-row]="i %

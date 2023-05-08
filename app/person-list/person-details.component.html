@@ -1,0 +1,7 @@
+<h1>Details for {{ person.name }}</h1>
+<p>Weight: {{ person.weight }} kg</p>
+<p>BMI Result: {{ person.bmi.toFixed(2) }}</p>
+<p *ngIf="person.bmi < 18.5">You are underweight. You should increase your calorie intake and exercise.</p>
+<p *ngIf="person.bmi >= 18.5 && person.bmi < 25">You are at a healthy weight. Keep it up!</p>
+<p *ngIf="person.bmi >= 25 && person.bmi < 30">You are overweight. You should reduce your calorie intake and exercise more.</p>
+<p *ngIf="person.bmi >= 30">You are obese. You should consult a doctor and follow a weight-loss program.</p>
