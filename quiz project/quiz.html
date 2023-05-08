@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="../quiz project/favicon-32x32.png">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body class="light">
+    <!-- Navbar -------------------------------------------------------------------------------------->
+    <div class="navbar">
+        <input type="checkbox" id="toggle" style="display:none;">
+        <label class="toggle" for="toggle">
+            <i class="bx bxs-sun"></i>
+            <i class="bx bx-moon"></i>
+            <span class="ball"></span>
+        </label>
+
+        <nav>
+            <ul id='nav-items'>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About Us</a></li>
+                <li><a href='#'>Services</a></li>
+                <li><a href='#' class="show-form">Contact</a></li>
+            </ul>
+
+            <button class="loginbtn" id="form-open">Login</button>
+        </nav>
+    </div>
+    <!-- Login --------------------------------------------------------------------------------------->
+
+    <div class="wrapper" id="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box-login">
+            <h2>Login</h2>
+            <form action="#" method="POST">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                        Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <!--  Register ------------------------------------------------------------------------------------->
+        <div class="form-box-register">
+            <h2>Registration</h2>
+            <form action="#" method="POST">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                        I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Log In</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- Feedback Contact Form ------------------------------------------------------------------------>
+    <div id="contact-wrapper">
+        <form id="contact-us" method="POST">
+            <span class="icon-close-feedback"><ion-icon name="close"></ion-icon></span>
+            <div class="input-box-feedback">
+                <h1>Feedback</h1>
+                <p>Tell us what should we improve, thank you!</p>
+                <div class="input-box-fbk">
+                    <label>First Name:</label>
+                    <input type="text">
+                </div>
+                <div class="input-box-fbk">
+                    <label>Last Name:</label>
+                    <input type="text">
+                </div>
+                <div class="input-box-fbk">
+                    <label>Email:</label>
+                    <input type="email">
+                </div>
+            </div>
+            <div class="radio-btns">
+                <input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="gender" value="female">Female<br>
+            </div>
+            <label>What do we need to improve? Feel free to tell us :D</label>
+            <textarea></textarea>
+            <button type="submit" class="contact-submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Quiz Wrapper ------------------------------------------------------------------------------------>
+
+    <div class="align-quiz">
+        <div class="quiz-wrapper" id="main">
+            <div class="title-align-text">
+                <h1>Welcome to our Quiz!</h1>
+                <h3>Pick a category :</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="cat-btn" id="HTML"><br><embed src="../html.png"></button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="cat-btn" id="CSS"><br><embed src="../css.png" </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="cat-btn" id="JavaScript"><br><embed src="../java-script.png" </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="cat-btn" id="Python"><br><embed src="../python.png" </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Difficulty  Div-------------------------------------------------------------------------------->
+
+    <div class="levels">
+        <div class="levels-content">
+            <h1 class="">Pick Difficulty :</h1>
+            <button class="levelsbtn" id="easy">Easy</button>
+            <button class=" levelsbtn" id="medium">Medium</button>
+            <button class="levelsbtn" id="hard">Hard</button>
+        </div>
+    </div>
+
+    <!--Quiz -->
+
+    <div class="quiz-main">
+        <div class="quiz-content">
+            <div class="question-title">
+                <h1>Question: </h1>
+                <p id="question-displayed">Lorem </p>
+            </div>
+            <div class="question-options">
+                <div class="choices">
+                    <button class="choice-btn" id="choice1">Choice 1</button>
+                    <button class="choice-btn" id="choice2">Choice 2</button>
+                    <button class="choice-btn" id="choice3">Choice 3</button>
+                    <button class="choice-btn" id="choice4">Choice 4</button>
+
+                </div>
+                <button class="next">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- i put the js file last so i dont have an error using jquery function-->
+    <script src="quiz.js"></script>
+    <script type="module" src="db.json"></script>
+
+</body>
+
+</html>
